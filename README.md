@@ -10,4 +10,7 @@ To run the file you can execute the following command:
 To change the number of days or sessions you can execute the following command:
 ./clingo Scenario N/FILENAME.lp encoding.lp --opt-strategy=usc --parallel-mode 4 --const s_max=n --const d_count=m
 
-Inside the real_data folder there are the input files corresponding to the real data.
+Inside the real_data folder there are:
+- the new encoding to generate a better MSS starting from real data: new_encoding.lp.
+- the input file with the original target value: original.lp, to use with the original encoding
+- the new input file with the derived new target value new_percentage.lp, to use with the new encoding
